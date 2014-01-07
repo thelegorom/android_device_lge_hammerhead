@@ -23,6 +23,8 @@ PRODUCT_COPY_FILES += \
     device/lge/hammerhead/init.hammerhead.rc:root/init.hammerhead.rc \
     device/lge/hammerhead/init.hammerhead.usb.rc:root/init.hammerhead.usb.rc \
     device/lge/hammerhead/fstab.hammerhead:root/fstab.hammerhead \
+    device/lge/hammerhead/modules/kcontrol_gpu_msm.ko:system/lib/modules/kcontrol_gpu_msm.ko \
+    device/lge/hammerhead/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko \
     device/lge/hammerhead/sbin/lsbootscript.sh:root/sbin/lsbootscript.sh \
     device/lge/hammerhead/ueventd.hammerhead.rc:root/ueventd.hammerhead.rc
 
