@@ -1,6 +1,8 @@
 [
  {
+   "remote": "gh",
    "repository": "android_kernel_lge_hammerhead",
    "target_path": "kernel/lge/hammerhead"
+   "revision": "cm-11.0"
  }
 ]
