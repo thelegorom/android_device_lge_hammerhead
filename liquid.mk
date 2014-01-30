@@ -25,9 +25,6 @@ $(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
 # phone
 $(call inherit-product, vendor/liquid/config/common_phone.mk)
 
-# telephony
-$(call inherit-product, vendor/liquid/config/common_gsm.mk)
-
 # product
 PRODUCT_DEVICE := hammerhead
 PRODUCT_BRAND := Google
