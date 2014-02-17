@@ -22,6 +22,9 @@ TARGET_SCREEN_WIDTH := 1080
 # device
 $(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
 
+# Enhanced NFC
+$(call inherit-product, vendor/liquid/config/nfc_enhanced.mk)
+
 # phone
 $(call inherit-product, vendor/liquid/config/common_phone.mk)
 
