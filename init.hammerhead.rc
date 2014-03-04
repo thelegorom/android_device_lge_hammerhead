@@ -257,6 +257,16 @@ on charger
     start lsbootscript
     start mpdecision
 
+    # Have frandom/erandom replace random and urandom
+    chmod 644 /dev/frandom
+    chmod 644 /dev/erandom
+    mv /dev/random /dev/random.ori
+    mv /dev/urandom /dev/urandom.ori
+    ln /dev/frandom /dev/random
+    chmod 644 /dev/random
+    ln /dev/erandom /dev/urandom
+    chmod 644 /dev/urandom
+
 on property:init.svc.wpa_supplicant=stopped
     stop dhcpcd
 
