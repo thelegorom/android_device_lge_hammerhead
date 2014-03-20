@@ -111,7 +111,7 @@ BOARD_CUSTOM_BOOTIMG_MK := device/lge/hammerhead/mkbootimg.mk
 # Define kernel config for inline building
 TARGET_KERNEL_CONFIG := liquid_hammerhead_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro-4.9
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := sm-arm-eabi-4.9
 
 # The list below is order dependent
 BOARD_SEPOLICY_UNION := \
