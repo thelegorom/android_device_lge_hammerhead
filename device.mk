@@ -326,7 +326,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     
 # OTA ID
 PRODUCT_PROPERTY_OVERRIDES += \
-    otaupdater.otaid=liquidhammerhead
+    otaupdater.otaid=legohammerhead
 
 # setup dalvik vm configs.
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
@@ -339,3 +339,6 @@ $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4339
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.cwm.forbid_format=/persist,/firmware,/boot,/sbl1,/tz,/rpm,/sdi,/aboot,/imgdata \
     ro.cwm.forbid_mount=/persist,/firmware
+# Misc
+PRODUCT_PACKAGES += \
+    Torch
